@@ -466,12 +466,8 @@ const text = `━━━[ R N D M Z R ]━━━
 [${no++}] ${prefix}done  
 [${no++}] ${prefix}proses
 
-❏ 「 ＪＡＤＩ ＢＯＴ 」
-[${no++}] ${prefix}jadibot
-[${no++}] ${prefix}listjadibot
-
 ${readmore}
-_Ketik *#donasi* untuk berdonasi ke bot ini_`
+_Ketik *${prefix}donasi* untuk berdonasi ke bot ini_`
 conn.sendMessage(from, {text: text, mentions: [sender]}, {quoted: floc})
 }
 break
@@ -516,7 +512,7 @@ const text = `━━━[ R N D M Z R ]━━━
 [${no++}] ${prefix}menfess
 
 ${readmore}
-_Ketik *#donasi* untuk berdonasi ke bot ini_`
+_Ketik *${prefix}donasi* untuk berdonasi ke bot ini_`
 conn.sendMessage(from, {text: text, mentions: [sender]}, {quoted: floc})
 }
 break
