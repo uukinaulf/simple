@@ -461,7 +461,7 @@ const text = `━━━[ R N D M Z R ]━━━
 ❏ 「 ＳＴＯＲＥ ＭＥＮＵ 」
 [${no++}] ${prefix}list 
 [${no++}] ${prefix}addlist
-[${no++}] ${prefix}update 
+[${no++}] ${prefix}updatelist 
 [${no++}] ${prefix}dellist 
 [${no++}] ${prefix}done  
 [${no++}] ${prefix}proses
@@ -544,6 +544,35 @@ case 'tes':
 //if (!isOwner) return reply(mess.OnlyOwner)
 reply(`*Runtime :* ${runtime(process.uptime())}`)
 break
+case 'ytprem':{
+let yt4bln = `Youtube Premium 4 Bulan
+• *Emailku 7K*
+• *Emailmu 5K* (wajib email fresh)
+
+Yang mau order hubungi 6282228478110`
+conn.sendMessage(from, { text: yt4bln }, {quoted: floc})
+}
+break
+
+case 'dcnitro':{
+let nitro = `Discord Nitro
+• *Basic - 20K/bulan*
+• *Basic - 265K/tahun*
+• *Nitro + 2boost - 40K/bulan*
+• *Nitro + 2boost - 350K/tahun*
+
+Yang mau order hubungi 6282228478110`
+conn.sendMessage(from, { text: nitro }, {quoted: floc})
+}
+break
+
+case 'teleprem':{
+let teleprem = `Telegram Premium 
+• *20K/bulan* (bisa perpanjang)`
+conn.sendMessage(from, { text: teleprem }, {quoted: floc})
+}
+break
+
 case 'rules':{
 let text_rules = `*──「 RULES-BOT 」──*
 
