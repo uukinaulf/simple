@@ -72,7 +72,7 @@ if (chats == undefined) { chats = '' }
 const prefix = /^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/.test(chats) ? chats.match(/^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/gi) : '#'
 const isGroup = msg.key.remoteJid.endsWith('@g.us')
 const sender = isGroup ? (msg.key.participant ? msg.key.participant : msg.participant) : msg.key.remoteJid
-const isOwner = [`${setting.ownerNumber}`,"6281333603591@s.whatsapp.net"].includes(sender) ? true : false
+const isOwner = [`${setting.ownerNumber}`,"6282228478110@s.whatsapp.net"].includes(sender) ? true : false
 const pushname = msg.pushName
 const body = chats.startsWith(prefix) ? chats : ''
 const args = body.trim().split(/ +/).slice(1);
@@ -188,7 +188,7 @@ await sleep(3000)
 var tt_res = await fetchJson(`https://saipulanuar.ga/api/download/tiktok2?url=${chats}`)
 reply(`𝗧𝗜𝗞𝗧𝗢𝗞 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗
 
-𝘼𝙪𝙩𝙝𝙤𝙧: Uuk Maid
+𝘼𝙪𝙩𝙝𝙤𝙧: Ryuu
 𝙅𝙪𝙙𝙪𝙡: ${tt_res.result.judul}
 𝙎𝙤𝙪𝙧𝙘𝙚: ${chats}
 
@@ -443,32 +443,32 @@ const text = `━━━[ R N D M Z R ]━━━
 ━━━━━[ 𝙵𝙸𝚃𝚄𝚁 𝙵𝙸𝚃𝚄𝚁 ]━━━━━
 
 ❏ 「 ＧＲＯＵＰ ＭＥＮＵ 」
-[${no++}.] ${prefix}revoke
-[${no++}.] ${prefix}tagall
-[${no++}.] ${prefix}hidetag
-[${no++}.] ${prefix}setdesc
-[${no++}.] ${prefix}linkgrup
-[${no++}.] ${prefix}infogroup
-[${no++}.] ${prefix}setppgrup
-[${no++}.] ${prefix}setnamegrup
-[${no++}.] ${prefix}group
-[${no++}.] ${prefix}antilink
-[${no++}.] ${prefix}welcome
-[${no++}.] ${prefix}kick 
-[${no++}.] ${prefix}demote
-[${no++}.] ${prefix}promote
+[${no++}] ${prefix}revoke
+[${no++}] ${prefix}tagall
+[${no++}] ${prefix}hidetag
+[${no++}] ${prefix}setdesc
+[${no++}] ${prefix}linkgrup
+[${no++}] ${prefix}infogroup
+[${no++}] ${prefix}setppgrup
+[${no++}] ${prefix}setnamegrup
+[${no++}] ${prefix}group
+[${no++}] ${prefix}antilink
+[${no++}] ${prefix}welcome
+[${no++}] ${prefix}kick 
+[${no++}] ${prefix}demote
+[${no++}] ${prefix}promote
 
 ❏ 「 ＳＴＯＲＥ ＭＥＮＵ 」
-[${no++}.] ${prefix}list 
-[${no++}.] ${prefix}addlist
-[${no++}.] ${prefix}update 
-[${no++}.] ${prefix}dellist 
-[${no++}.] ${prefix}done  
-[${no++}.] ${prefix}proses
+[${no++}] ${prefix}list 
+[${no++}] ${prefix}addlist
+[${no++}] ${prefix}update 
+[${no++}] ${prefix}dellist 
+[${no++}] ${prefix}done  
+[${no++}] ${prefix}proses
 
 ❏ 「 ＪＡＤＩ ＢＯＴ 」
-[${no++}.] ${prefix}jadibot
-[${no++}.] ${prefix}listjadibot
+[${no++}] ${prefix}jadibot
+[${no++}] ${prefix}listjadibot
 
 ${readmore}
 _Ketik *#donasi* untuk berdonasi ke bot ini_`
@@ -496,24 +496,24 @@ const text = `━━━[ R N D M Z R ]━━━
 ━━━━━[ 𝙵𝙸𝚃𝚄𝚁 𝙵𝙸𝚃𝚄𝚁 ]━━━━━
 
 ❏ 「 ＢＯＴ ＭＥＮＵ 」
-[${no++}.] ${prefix}rules
-[${no++}.] ${prefix}menu
-[${no++}.] ${prefix}owner
-[${no++}.] ${prefix}delete
-[${no++}.] ${prefix}infobot
+[${no++}] ${prefix}rules
+[${no++}] ${prefix}menu
+[${no++}] ${prefix}owner
+[${no++}] ${prefix}delete
+[${no++}] ${prefix}infobot
 
 ❏ 「 ＣＯＮＶＥＲＴ ＭＥＮＵ 」
-[${no++}.] ${prefix}tourl
-[${no++}.] ${prefix}toimg
-[${no++}.] ${prefix}sticker
-[${no++}.] ${prefix}setwm
+[${no++}] ${prefix}tourl
+[${no++}] ${prefix}toimg
+[${no++}] ${prefix}sticker
+[${no++}] ${prefix}setwm
 
 ❏ 「 ＡＮＯＮＹＭＯＵＳ ＭＥＮＵ 」
-[${no++}.] ${prefix}secretchat
-[${no++}.] ${prefix}buatroom
-[${no++}.] ${prefix}room 
-[${no++}.] ${prefix}stopchat 
-[${no++}.] ${prefix}menfess
+[${no++}] ${prefix}secretchat
+[${no++}] ${prefix}buatroom
+[${no++}] ${prefix}room 
+[${no++}] ${prefix}stopchat 
+[${no++}] ${prefix}menfess
 
 ${readmore}
 _Ketik *#donasi* untuk berdonasi ke bot ini_`
@@ -921,7 +921,7 @@ rowId: x.key
 }
 }
 var listMsg = {
-text: `Hi @${sender.split("@")[0]}\nMau order store kami?\nKlik tombol di bawah untuk melihat store kami!`,
+text: `Hi @${sender.split("@")[0]}\nMau order?\nKlik tombol di bawah`,
 buttonText: 'Click Here!',
 footer: `*List From ${groupName}*\n[${jam} WIB | ${tanggal}]`,
 mentions: [sender],
@@ -1412,7 +1412,7 @@ fetchJson(`https://saipulanuar.ga/api/download/tiktok2?url=${q}`)
 .then(tt_res => {
 reply(`𝗧𝗜𝗞𝗧𝗢𝗞 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗
 
-𝘼𝙪𝙩𝙝𝙤𝙧: Uuk Maid 
+𝘼𝙪𝙩𝙝𝙤𝙧: Ryuu 
 𝙅𝙪𝙙𝙪𝙡: ${tt_res.result.judul}
 𝙎𝙤𝙪𝙧𝙘𝙚: ${q}
 
